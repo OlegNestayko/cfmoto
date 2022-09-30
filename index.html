@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -22,7 +23,7 @@
 			</a>
 			<nav class="header__nav nav">
 				<ul class="nav__list list">
-					<li class="nav__item"><a href="#" class="nav__link link">Маршруты</a></li>
+					<li class="nav__item"><a href="#routes" class="nav__link link">Маршруты</a></li>
 					<li class="nav__item"><a href="#" class="nav__link link">Галерея</a></li>
 					<li class="nav__item"><a href="#" class="nav__link link">Вопрос-Ответ</a></li>
 					<li class="nav__item"><a href="#" class="nav__link link">Контакты</a></li>
@@ -48,13 +49,196 @@
 					в Геленджике</h1>
 				<p class="hero__desc">приезжайте за новыми ощущениями и эмоциями!</p>
 				<button type="button" class="hero__btn btn">Подобрать маршрут
-					<img src="" alt="" class="hero__pic">
+
 				</button>
 			</div>
 			<img src="./img/hero/hero.jpg" alt="woods and mountains" class="hero__img" width="1440">
 		</section>
-		<section></section>
-		<section></section>
+
+		<!-- Benefits -->
+		<section class="benefits">
+			<ul class="benefits__list list section">
+				<li class="benefits__item">
+
+					<img src="./img/benefits/trees.png" alt="trees" class="benefits__pic" width="36" height="36">
+					<span class="benefits__ellipse"></span>
+					<h2 class="benefits__title">Увлекательные экскурсии</h2>
+					<p class="benefits__desk">Маршруты от лесных дорожек
+						до полного бездорожья!</p>
+				</li>
+				<li class="benefits__item">
+					<img src="./img/benefits/motocycle.png" alt="motocycle" class="benefits__pic" width="36" height="36">
+					<span class="benefits__ellipse"></span>
+					<h2 class="benefits__title">Надежная техника</h2>
+					<p class="benefits__desk">18 квадроциклов всех японских брендов</p>
+				</li>
+				<li class="benefits__item">
+					<img src="./img/benefits/helmet.png" alt="helmet" class="benefits__pic" width="36" height="36"><span
+						class="benefits__ellipse"></span>
+					<h2 class="benefits__title">Экипировка бесплатно</h2>
+					<p class="benefits__desk">Необходимая экипировка
+						выдается бесплатно</p>
+				</li>
+				<li class="benefits__item">
+					<img src="./img/benefits/instructor.png" alt="instructor" class="benefits__pic" width="36"
+						height="36"><span class="benefits__ellipse"></span>
+					<h2 class="benefits__title">Опытные инструктора</h2>
+					<p class="benefits__desk">Обеспечат полную безопасность Вашего отдыха</p>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Routes -->
+		<section id="routes" class="route">
+			<h2 class="route__caption">Наши маршруты</h2>
+			<!-- route base  -->
+			<div class="route-wrapper">
+				<div class="route-content">
+					<h3 class="route-content__title">БАЗОВЫЙ</h3>
+					<h4 class="route-content__subtitle">от 4000 &#36;</h4>
+					<ul class="route-content__list list">
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/time.png" alt="clock" class="item-route__pic">
+							<p class="item-route__text">Время в пути: <span class="accent-text">1,5 - 2 часа</span> </p>
+						</li>
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/distance.png" alt="distance" class="item-route__pic">
+							<p class="item-route__text">Расстояние: <span class="accent-text">20 - 25 км</span></p>
+						</li>
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/star.png" alt="star" class="item-route__pic">
+							<p class="item-route__text">Сложность: <span class="accent-text">5&#10038;&#10038;&#10038;</span>
+							</p>
+						</li>
+					</ul>
+					<h5 class="route-content__caption">маршрут</h5><img src="./img/routes-img/icons/icon.png" alt="icon"
+						width="24" class="route-content__pic">
+					<p class="route-content__text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис -
+						-Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+						-Форсаж</p>
+					<button type="button" class="route-content__btn btn btn-light">Подробнее</button>
+					<button type="button" class="route-content__btn btn btn-accent">Забронировать</button>
+				</div>
+				<div class="route-slider swiper">
+					<div class="route-slider__wrapper swiper-wrapper">
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/base/buggy1.jpg" alt="">
+						</div>
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/base/buggy2.jpg" alt="">
+						</div>
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/base/buggy3.jpg" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+
+				</div>
+			</div>
+			<!-- route extended -->
+			<div class="route-wrapper reverse">
+				<div class="route-content indent">
+					<h3 class="route-content__title">РАСШИРЕННЫЙ</h3>
+					<h4 class="route-content__subtitle">от 16000 &#36;</h4>
+					<ul class="route-content__list list">
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/time.png" alt="clock" class="item-route__pic">
+							<p class="item-route__text">Время в пути: <span class="accent-text">6 - 8 часов</span> </p>
+						</li>
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/distance.png" alt="distance" class="item-route__pic">
+							<p class="item-route__text">Расстояние: <span class="accent-text">60 - 70 км</span></p>
+						</li>
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/star.png" alt="star" class="item-route__pic">
+							<p class="item-route__text">Сложность: <span class="accent-text">5&#10038;&#10038;&#10038;</span>
+							</p>
+						</li>
+					</ul>
+					<h5 class="route-content__caption">маршрут</h5><img src="./img/routes-img/icons/icon.png" alt="icon"
+						width="24" class="route-content__pic">
+					<p class="route-content__text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис -
+						-Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+						-Форсаж</p>
+					<button type="button" class="route-content__btn btn btn-light">Подробнее</button>
+					<button type="button" class="route-content__btn btn btn-accent">Забронировать</button>
+				</div>
+				<div class="route-slider swiper">
+					<div class="route-slider__wrapper swiper-wrapper">
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/extended/buggy1.jpg" alt="buggy">
+						</div>
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/extended/buggy2.jpg" alt="buggy">
+						</div>
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/extended/buggy3.jpg" alt="buggy">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+
+				</div>
+			</div>
+			<!-- route experience -->
+			<div class="route-wrapper">
+				<div class="route-content">
+					<h3 class="route-content__title">Experience</h3>
+					<h4 class="route-content__subtitle">от 7000 &#36;</h4>
+					<ul class="route-content__list list">
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/time.png" alt="clock" class="item-route__pic">
+							<p class="item-route__text">Время в пути: <span class="accent-text">4 часа</span> </p>
+						</li>
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/distance.png" alt="distance" class="item-route__pic">
+							<p class="item-route__text">Расстояние: <span class="accent-text">40 - 50 км</span></p>
+						</li>
+						<li class="route-content__item item-route">
+							<img src="./img/routes-img/icons/star.png" alt="star" class="item-route__pic">
+							<p class="item-route__text">Сложность: <span class="accent-text">5&#10038;&#10038;&#10038;</span>
+							</p>
+						</li>
+					</ul>
+					<h5 class="route-content__caption">маршрут</h5><img src="./img/routes-img/icons/icon.png" alt="icon"
+						width="24" class="route-content__pic">
+					<p class="route-content__text">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –
+						- Форсаж</p>
+					<button type="button" class="route-content__btn btn btn-light">Подробнее</button>
+					<button type="button" class="route-content__btn btn btn-accent">Забронировать</button>
+				</div>
+				<div class="route-slider swiper">
+					<div class="route-slider__wrapper swiper-wrapper">
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/experience/buggy1.jpg" alt="">
+						</div>
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/experience/buggy2.jpg" alt="">
+						</div>
+						<div class="route-slider__slide swiper-slide">
+							<img class="slider-img" src="./img/routes-img/experience/buggy3.jpg" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+
+				</div>
+			</div>
+		</section>
+
 		<section></section>
 		<section></section>
 		<section></section>
@@ -68,6 +252,10 @@
 
 	<!--Footer-->
 	<footer></footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./js/script.js" type="module"></script>
 
 </body>
 
