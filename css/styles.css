@@ -21,6 +21,7 @@ html {
   --secondary-light: #f4f4f4;
   --main-dark: #121214;
   --accent: #037e8c;
+  --accent-secondary: #0cbace;
 }
 
 body {
@@ -57,6 +58,7 @@ body {
 }
 
 /* ALL Buttons styles-----------------------*/
+/* ---------------------------------------- */
 .btn {
   padding: 14px 44px;
 
@@ -109,13 +111,13 @@ body {
 .btn-light:focus {
   color: var(--main-light);
 
-  background-color: var(--accent);
+  background-color: var(--accent-secondary);
   border: 1px solid var(--secondary-light);
 }
 
 .btn-light:hover,
 .btn-light:focus {
-  background-color: #0cbace;
+  background-color: var(--accent-secondary);
 }
 
 /* Hero btn---------------------------------*/
@@ -134,10 +136,12 @@ body {
 .hero__btn:hover,
 .hero__btn:focus,
 .btn-accent:hover,
-.btn-accent:focus {
-  color: var(--accent);
+.btn-accent:focus,
+.test__btn:hover,
+.test__btn:focus {
+  color: var(--secondary-light);
 
-  background-color: var(--main-light);
+  background-color: var(--accent-secondary);
   border: 1px solid var(--accent);
 }
 /* ---------------------------------------- */
@@ -187,6 +191,11 @@ body {
 
 .nav__item:not(:first-child) {
   margin-left: 50px;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--accent-secondary);
 }
 
 /* ---------------------------------------- */
@@ -299,7 +308,7 @@ body {
   line-height: calc(21 / 14);
 }
 
-/* Route--------------------------------------- */
+/* Route----------------------------------- */
 .route {
   background-color: #f4f4f4;
 }
@@ -385,7 +394,7 @@ body {
 }
 
 /* ---------------------------------------- */
-/* Slider */
+/* Route Section Slider */
 
 .swiper {
   width: 650px;
@@ -397,9 +406,36 @@ body {
   margin: 0px auto;
   padding-left: 10px;
   max-width: 100%;
+  border-radius: 30px/20px;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
   color: var(--accent);
+}
+
+/* Test--------------------------------------- */
+.test {
+  background: url(../img/test-img/background/vector.png);
+  background-color: var(--main-dark);
+}
+
+.test-container {
+  padding: 81px 0px 94px;
+  text-align: center;
+}
+
+.test__title {
+  padding-bottom: 20px;
+
+  font-size: 36px;
+  line-height: calc(47 / 36);
+  color: var(--main-light);
+}
+
+.test__text {
+  padding-bottom: 42px;
+  font-size: var(--secondary-fz);
+  line-height: calc(23 / 18);
+  color: var(--main-light);
 }
