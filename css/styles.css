@@ -397,16 +397,17 @@ body {
 /* Route Section Slider */
 
 .swiper {
-  width: 650px;
+  width: 850px;
   height: 400px;
+  padding-top: 30px;
 }
 
 .slider-img {
+  padding-left: 20px;
   display: block;
-  margin: 0px auto;
-  padding-left: 10px;
   max-width: 100%;
-  border-radius: 30px/20px;
+
+  border-radius: 30px/30px;
 }
 
 .swiper-button-prev::after,
@@ -438,4 +439,129 @@ body {
   font-size: var(--secondary-fz);
   line-height: calc(23 / 18);
   color: var(--main-light);
+}
+
+/* Gallery section--------------------------*/
+
+/* slick slider classes */
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+  /* Слайдер с точками */
+}
+.slick-slider.slick-dotted {
+}
+
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
+/* ---------------------------------------- */
+.gallery__wrapper {
+  position: relative;
+  padding: 50px;
+}
+.gallery__slide {
+  text-align: center;
+  opacity: 0.4;
+  transition: all 0.5s ease 0s;
+}
+.gallery__img {
+  border-radius: 30px/20px;
+  padding: 0px 15px;
+  max-width: 100%;
+}
+/* ---------------------------------------- */
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* ---------------------------------------- */
+.gallery__wrapper .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 27;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.gallery__wrapper .slick-arrow.slick-prev {
+  left: 5px;
+
+  background: url(../img/routes-img/icons/arrow-left-long-solid.svg) 0 0/100% no-repeat;
+}
+/* Стрелка вправо */
+.gallery__wrapper .slick-arrow.slick-next {
+  right: 5px;
+
+  background: url(../img/routes-img/icons/arrow-right-long-solid.svg) 0 0/100% no-repeat;
+}
+/* ---------------------------------------- */
+/* Точки (булиты) */
+.gallery__wrapper .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__wrapper .slick-dots li {
+  list-style: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Элемент точки */
+.gallery__wrapper .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-light);
+  border: 1px solid var(--accent-secondary);
+  cursor: pointer;
+}
+
+/* Активная точка */
+.gallery__wrapper .slick-dots li.slick-active button {
+  background-color: var(--accent-secondary);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.gallery__wrapper .slick-center {
+  opacity: 1;
 }
