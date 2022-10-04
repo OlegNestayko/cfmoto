@@ -666,9 +666,6 @@ body {
     url(../img/team/bumper.png) 100% -400% no-repeat;
 }
 
-.team-wrapper {
-}
-
 .team__title {
   padding-bottom: 40px;
 
@@ -688,12 +685,6 @@ body {
   background-color: var(--secondary-light);
 }
 
-.item-team {
-}
-
-.item-team__img {
-}
-
 .item-team__desc {
   padding: 18px 0px 22px 26px;
 }
@@ -708,4 +699,51 @@ body {
   font-weight: var(--secondary-fw);
   font-size: var(--secondary-fz);
   line-height: calc(23 / 18);
+}
+
+/* Terms section--------------------------- */
+
+.terms-container {
+  background: url(../img/terms/background.png) no-repeat;
+}
+
+.terms-wrapper {
+  padding: 50px 0 82px;
+}
+
+.terms__title {
+  padding-bottom: 43px;
+  margin-left: 400px;
+  max-width: 500px;
+
+  font-size: 36px;
+  line-height: calc(47 / 36);
+
+  text-align: center;
+}
+
+.terms-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 30px;
+}
+
+.terms__item {
+  max-width: 412px;
+  height: 112px;
+
+  background: url(../img/terms/icon.png) 5px 9px no-repeat;
+
+  background-color: var(--main-light);
+  border-radius: 9px;
+}
+
+.terms__desc {
+  padding-top: 9px;
+  padding-left: 65px;
+  padding-right: 27px;
+
+  font-weight: var(--secondary-fw);
+  line-height: calc(21 / 14);
 }
