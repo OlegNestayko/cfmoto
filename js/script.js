@@ -1,52 +1,14 @@
-// Swiper slider
-new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  slidesPerView: 3,
-
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate: 30,
-  //   slideShadows: false,
-  // },
-
-  // Slides effect
-  // effect: 'flip',
-  // flipEffect: {
-  //   slideShadows: false,
-  // },
+// Slick slider
+// Route section
+$(document).ready(function () {
+  $('.route-slider').slick({
+    // slidesToShow: ,
+    dots: true,
+    centerMode: true,
+  });
 });
 
-// const swiperGallery = new Swiper('.gallery-container ', {
-//   loop: true,
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-
-// Slick slider
+// Gallery section
 $(document).ready(function () {
   $('.gallery__wrapper').slick({
     // Кол-во фото для показа
@@ -55,3 +17,4 @@ $(document).ready(function () {
     centerMode: true,
   });
 });
+/* ---------------------------------------- */
