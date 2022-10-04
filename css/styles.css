@@ -660,3 +660,52 @@ body {
 }
 
 /* Team section---------------------------- */
+.team-container {
+  padding: 64px 0px;
+  background: url(../img/team/canister.png) 0 630% no-repeat,
+    url(../img/team/bumper.png) 100% -400% no-repeat;
+}
+
+.team-wrapper {
+}
+
+.team__title {
+  padding-bottom: 40px;
+
+  font-size: 36px;
+  line-height: calc(47 / 36);
+
+  text-align: center;
+}
+
+.team__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team__item {
+  background-color: var(--secondary-light);
+}
+
+.item-team {
+}
+
+.item-team__img {
+}
+
+.item-team__desc {
+  padding: 18px 0px 22px 26px;
+}
+
+.item-team__title {
+  font-size: 24px;
+  line-height: calc(31 / 24);
+  color: var(--accent);
+}
+
+.item-team__team {
+  font-weight: var(--secondary-fw);
+  font-size: var(--secondary-fz);
+  line-height: calc(23 / 18);
+}
