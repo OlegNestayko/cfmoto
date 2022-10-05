@@ -154,7 +154,9 @@ body {
 .btn-accent:hover,
 .btn-accent:focus,
 .test__btn:hover,
-.test__btn:focus {
+.test__btn:focus,
+.gift-desc__btn:hover,
+.gift-desc__btn:focus {
   color: var(--secondary-light);
 
   background-color: var(--accent-secondary);
@@ -165,6 +167,13 @@ body {
 
 .offer__btn {
   padding: 10px 20px;
+}
+
+/* Gift btn-------------------------------- */
+
+.gift-desc__btn {
+  padding-left: 22px;
+  padding-right: 22px;
 }
 /* ---------------------------------------- */
 
@@ -243,7 +252,7 @@ body {
 .hero-container {
   position: relative;
   z-index: 10;
-  padding-top: 262px;
+  padding-top: 162px;
 }
 
 .hero__title {
@@ -757,8 +766,6 @@ body {
 }
 
 /* Offer section--------------------------- */
-.offer {
-}
 
 .offer-container {
   background: url(../img/offer/buggy.png) 0% 180% no-repeat,
@@ -781,8 +788,6 @@ body {
 /* ---------------------------------------- */
 .offer__list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .offer__item {
@@ -801,7 +806,7 @@ body {
 .offer_img {
   border-radius: 20px/10px;
 }
-
+/* ---------------------------------------- */
 .offer-box {
   padding-top: 26px;
   padding-left: 20px;
@@ -830,4 +835,125 @@ body {
 
 .offer__desc:nth-child(2) {
   padding-bottom: 14px;
+}
+
+/* Gift section---------------------------- */
+.gift {
+}
+
+.gift-container {
+  padding: 50px 0 90px;
+
+  background: url(../img/gift/background.png) no-repeat;
+  background-color: var(--secondary-light);
+}
+
+.gift-wrapper {
+}
+
+/* ---------------------------------------- */
+/* gift top */
+.gift-top {
+  text-align: center;
+}
+
+.gift-top__title {
+  padding-bottom: 12px;
+
+  font-size: 36px;
+  line-height: calc(47 / 36);
+
+  color: #151515;
+}
+
+.gift-top__desc {
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  color: var(--accent);
+}
+
+.gift-top__desc:last-child {
+  padding-bottom: 46px;
+}
+
+/* ---------------------------------------- */
+/* gift box */
+.gift-box {
+  display: flex;
+  /* justify-content: space-between; */
+}
+/* ---------------------------------------- */
+/* gift desc */
+.gift-desc {
+  flex: 0 0 50%;
+}
+
+.gift-desc__text {
+  padding-bottom: 30px;
+  max-width: 524px;
+
+  font-weight: var(--secondary-fw);
+  font-size: var(--secondary-fz);
+  line-height: calc(31 / 18);
+
+  color: #151515;
+}
+
+/* ---------------------------------------- */
+/* gift-card */
+.gift-card {
+  position: relative;
+
+  background: url(../img/gift/bow.png) 0% 0% no-repeat,
+    url(../img/gift/blot.png) 100% 100% no-repeat;
+  background-color: #373737;
+
+  border-radius: 9px;
+}
+.gaift-card__box {
+}
+.gift-card__title {
+  padding-top: 35px;
+  padding-right: 63px;
+  padding-left: 206px;
+  padding-bottom: 50px;
+
+  font-size: 48px;
+  line-height: calc(62 / 48);
+
+  color: #121214;
+}
+
+.gift-card__wrap {
+  position: relative;
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.gift-card__box {
+  padding-left: 124px;
+}
+.gift-card__text {
+  padding-bottom: 22px;
+  max-width: 226px;
+
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  color: var(--main-light);
+}
+.gift-card__desc {
+  padding-bottom: 59px;
+
+  font-weight: var(--secondary-fw);
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: var(--main-light);
+}
+.gift-card__pic {
+  position: absolute;
+  top: -58px;
+  left: 462px;
+  display: inline-block;
+  max-width: 104px;
+  max-height: 133px;
 }
