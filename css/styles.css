@@ -700,6 +700,11 @@ body {
 
 .team__item {
   background-color: var(--secondary-light);
+  border-radius: 9px;
+}
+
+.item-team__img {
+  border-radius: 10px;
 }
 
 .item-team__desc {
