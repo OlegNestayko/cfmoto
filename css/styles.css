@@ -122,7 +122,9 @@ body {
 .header__btn:hover,
 .header__btn:focus,
 .btn-light:hover,
-.btn-light:focus {
+.btn-light:focus,
+.offer__btn:hover,
+.offer__btn:focus {
   color: var(--main-light);
 
   background-color: var(--accent-secondary);
@@ -157,6 +159,12 @@ body {
 
   background-color: var(--accent-secondary);
   border: 1px solid var(--accent);
+}
+
+/* Offer btn------------------------------- */
+
+.offer__btn {
+  padding: 10px 20px;
 }
 /* ---------------------------------------- */
 
@@ -710,7 +718,7 @@ body {
 .terms-wrapper {
   padding: 50px 0 82px;
 }
-
+/* ---------------------------------------- */
 .terms__title {
   padding-bottom: 43px;
   margin-left: 400px;
@@ -746,4 +754,80 @@ body {
 
   font-weight: var(--secondary-fw);
   line-height: calc(21 / 14);
+}
+
+/* Offer section--------------------------- */
+.offer {
+}
+
+.offer-container {
+  background: url(../img/offer/buggy.png) 0% 180% no-repeat,
+    url(../img/offer/detail.png) 100% -100% no-repeat;
+}
+
+.offer-wrapper {
+  padding: 64px 0 75px;
+}
+/* ---------------------------------------- */
+.offer__title {
+  padding-bottom: 45px;
+
+  font-size: 36px;
+  line-height: calc(47 / 36);
+  color: #373737;
+
+  text-align: center;
+}
+/* ---------------------------------------- */
+.offer__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer__item {
+  display: flex;
+
+  background: url(../img/offer/blot.png) 100% 100% no-repeat;
+  background-color: var(--secondary-light);
+
+  border-radius: 9px;
+}
+
+.offer__item:last-child {
+  margin-left: 15px;
+}
+/* ---------------------------------------- */
+.offer_img {
+  border-radius: 20px/10px;
+}
+
+.offer-box {
+  padding-top: 26px;
+  padding-left: 20px;
+}
+
+.offer__subtitle {
+  font-size: 36px;
+  line-height: calc(50 / 36);
+  color: var(--accent);
+}
+
+.offer__accent {
+  font-weight: var(--main-fw);
+  font-size: 24px;
+  line-height: calc(33 / 24);
+  color: var(--accent);
+}
+
+.offer__desc {
+  padding-top: 15px;
+
+  font-weight: var(--secondary-fw);
+  font-size: var(--secondary-fz);
+  line-height: calc(23 / 18);
+}
+
+.offer__desc:nth-child(2) {
+  padding-bottom: 14px;
 }
