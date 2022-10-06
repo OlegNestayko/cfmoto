@@ -8,6 +8,7 @@ $(document).ready(function () {
   });
 });
 
+/*------------------------------------------*/
 // Gallery section
 $(document).ready(function () {
   $('.gallery__wrapper').slick({
@@ -18,4 +19,14 @@ $(document).ready(function () {
     centerMode: true,
   });
 });
-/* ---------------------------------------- */
+
+// Spoiler
+$(document).ready(function () {
+  $('.qa__subtitle').click(function (event) {
+    if ($('.qa__list').hasClass('one')) {
+      $('.qa__subtitle').not(this).removeClass('active');
+      $('.qa__text').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
+  });
+});

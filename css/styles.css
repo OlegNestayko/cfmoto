@@ -175,6 +175,13 @@ body {
   padding-left: 22px;
   padding-right: 22px;
 }
+
+/* QA btn---------------------------------- */
+.content-qa__btn {
+  display: block;
+  margin-left: 200px;
+}
+
 /* ---------------------------------------- */
 
 .accent-text {
@@ -808,7 +815,7 @@ body {
   margin-left: 15px;
 }
 /* ---------------------------------------- */
-.offer_img {
+.offer__img {
   border-radius: 20px/10px;
 }
 /* ---------------------------------------- */
@@ -843,17 +850,12 @@ body {
 }
 
 /* Gift section---------------------------- */
-.gift {
-}
 
 .gift-container {
   padding: 50px 0 90px;
 
   background: url(../img/gift/background.png) no-repeat;
   background-color: var(--secondary-light);
-}
-
-.gift-wrapper {
 }
 
 /* ---------------------------------------- */
@@ -867,7 +869,6 @@ body {
 
   font-size: 36px;
   line-height: calc(47 / 36);
-
   color: #151515;
 }
 
@@ -885,8 +886,8 @@ body {
 /* gift box */
 .gift-box {
   display: flex;
-  /* justify-content: space-between; */
 }
+
 /* ---------------------------------------- */
 /* gift desc */
 .gift-desc {
@@ -900,23 +901,19 @@ body {
   font-weight: var(--secondary-fw);
   font-size: var(--secondary-fz);
   line-height: calc(31 / 18);
-
   color: #151515;
 }
 
 /* ---------------------------------------- */
 /* gift-card */
 .gift-card {
-  position: relative;
-
   background: url(../img/gift/bow.png) 0% 0% no-repeat,
     url(../img/gift/blot.png) 100% 100% no-repeat;
   background-color: #373737;
 
   border-radius: 9px;
 }
-.gaift-card__box {
-}
+
 .gift-card__title {
   padding-top: 35px;
   padding-right: 63px;
@@ -925,12 +922,12 @@ body {
 
   font-size: 48px;
   line-height: calc(62 / 48);
-
   color: #121214;
 }
 
 .gift-card__wrap {
   position: relative;
+
   display: flex;
   flex: 0 0 50%;
 }
@@ -938,6 +935,7 @@ body {
 .gift-card__box {
   padding-left: 124px;
 }
+
 .gift-card__text {
   padding-bottom: 22px;
   max-width: 226px;
@@ -946,6 +944,7 @@ body {
   line-height: calc(30 / 24);
   color: var(--main-light);
 }
+
 .gift-card__desc {
   padding-bottom: 59px;
 
@@ -954,11 +953,138 @@ body {
   line-height: calc(21 / 16);
   color: var(--main-light);
 }
+
 .gift-card__pic {
   position: absolute;
   top: -58px;
   left: 462px;
-  display: inline-block;
+
   max-width: 104px;
   max-height: 133px;
+}
+
+/* QA section------------------------------ */
+
+.qa-continer {
+  padding: 0px 112px;
+  background: url(../img/qa/buggy.png) 100% 200% no-repeat,
+    url(../img/qa/spring.png) 0% -325% no-repeat;
+}
+/* ---------------------------------------- */
+.qa__title {
+  padding: 70px 0 50px;
+
+  font-size: 36px;
+  line-height: calc(51 / 36);
+
+  text-align: center;
+}
+
+/* ---------------------------------------- */
+.qa-wrapper {
+  display: flex;
+}
+
+.qa__list {
+  flex: 50%;
+  padding-bottom: 85px;
+}
+
+.qa_item {
+  padding: 20px 16px 0px;
+  max-width: 539px;
+
+  border: 0.5px solid #848484;
+  border-radius: 2px;
+}
+
+.qa_item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* ---------------------------------------- */
+.qa__subtitle {
+  position: relative;
+
+  padding-bottom: 19px;
+
+  font-weight: var(--main-fw);
+  font-size: var(--secondary-fz);
+  line-height: calc(20 / 16);
+
+  cursor: pointer;
+}
+/* arrows subtitle*/
+.qa__subtitle::before,
+.qa__subtitle::after {
+  content: '';
+
+  position: absolute;
+
+  width: 15px;
+  height: 2px;
+  background-color: var(--main-dark);
+
+  transition: all 0.3s ease 0s;
+}
+
+.qa__subtitle::before {
+  top: 0;
+  left: 480px;
+  transform: rotate(-40deg);
+}
+
+.qa__subtitle::after {
+  top: 0px;
+  left: 470px;
+  transform: rotate(40deg);
+}
+.qa__subtitle.active {
+  color: var(--accent-secondary);
+}
+/* active arrows */
+.qa__subtitle.active::before,
+.qa__subtitle.active::after {
+  background-color: var(--accent-secondary);
+}
+
+.qa__subtitle.active::before {
+  transform: rotate(40deg);
+}
+
+.qa__subtitle.active::after {
+  transform: rotate(-40deg);
+}
+/* ---------------------------------------- */
+.qa__text {
+  display: none;
+  padding: 6px 0 30px;
+  max-width: 487px;
+
+  font-weight: var(--secondary-fw);
+  line-height: 1.5;
+}
+
+/* ---------------------------------------- */
+.qa-content {
+  flex: 50%;
+
+  text-align: center;
+}
+
+.content-qa__title {
+  padding: 14px 0;
+
+  font-weight: var(--main-fw);
+  font-size: 24px;
+  line-height: calc(29 / 24);
+}
+
+.content-qa__text {
+  display: inline-block;
+  padding-bottom: 30px;
+  max-width: 378px;
+
+  font-weight: var(--secondary-fw);
+  line-height: 17px;
 }
