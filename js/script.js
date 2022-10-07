@@ -2,8 +2,8 @@
 // Route section
 $(document).ready(function () {
   $('.route-slider').slick({
+    lazyLoad: 'ondemand',
     dots: true,
-
     centerMode: true,
   });
 });
@@ -12,10 +12,9 @@ $(document).ready(function () {
 // Gallery section
 $(document).ready(function () {
   $('.gallery__wrapper').slick({
+    lazyLoad: 'ondemand',
     slidesToShow: 3,
-
     dots: true,
-
     centerMode: true,
   });
 });
@@ -27,6 +26,7 @@ $(document).ready(function () {
       $('.qa__subtitle').not(this).removeClass('active');
       $('.qa__text').not($(this).next()).slideUp(300);
     }
+
     $(this).toggleClass('active').next().slideToggle(300);
   });
 });

@@ -957,9 +957,9 @@ body {
 /* QA section------------------------------ */
 
 .qa-continer {
+  position: relative;
+
   padding: 0px 112px;
-  background: url(../img/qa/buggy.png) 100% 200% no-repeat,
-    url(../img/qa/spring.png) 0% -325% no-repeat;
 }
 /* ---------------------------------------- */
 .qa__title {
@@ -1086,6 +1086,19 @@ body {
   line-height: 17px;
 }
 
+/* QA background img----------------------- */
+.qa-bg {
+}
+.qa-bg__left {
+  position: absolute;
+  top: 37%;
+  left: 0%;
+}
+.qa-bg__right {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+}
 /* Services section------------------------ */
 
 .services-container {
@@ -1094,7 +1107,7 @@ body {
 
 /* ---------------------------------------- */
 .services__title {
-  padding-bottom: 55px;
+  padding-bottom: 65px;
 
   font-size: var(--title-fz);
   line-height: calc(51 / 36);
