@@ -15,6 +15,8 @@ html {
   --secondary-fw: 400;
   --main-fz: 14px;
   --secondary-fz: 18px;
+  --title-fz: 36px;
+  --title-lh: calc(47 / 36);
 
   /* Colors----------------------------------- */
   --main-light: #fff;
@@ -40,14 +42,35 @@ body {
   margin: 0px auto;
 }
 
+/* ---------------------------------------- */
 .link {
   text-decoration: none;
   color: currentColor;
 }
 
+/* ---------------------------------------- */
 .list {
   list-style: none;
 }
+
+/* ---------------------------------------- */
+.title {
+  font-size: var(--title-fz);
+  line-height: var(--title-lh);
+}
+
+/* ---------------------------------------- */
+.accent-text {
+  font-weight: var(--main-fw);
+  font-size: var(--main-fz);
+  line-height: calc(21 / 14);
+}
+
+/* ---------------------------------------- */
+.center {
+  text-align: center;
+}
+
 /* routes common styles---------------------*/
 .reverse {
   flex-direction: row-reverse;
@@ -180,14 +203,6 @@ body {
 .content-qa__btn {
   display: block;
   margin-left: 200px;
-}
-
-/* ---------------------------------------- */
-
-.accent-text {
-  font-weight: var(--main-fw);
-  font-size: var(--main-fz);
-  line-height: calc(21 / 14);
 }
 
 /* Header------------------------------------- */
@@ -381,7 +396,6 @@ body {
   padding-bottom: 9px;
 
   font-weight: var(--main-fw);
-  font-size: 36px;
   line-height: calc(39 / 36);
 }
 
@@ -534,8 +548,6 @@ body {
 .test__title {
   padding-bottom: 20px;
 
-  font-size: 36px;
-  line-height: calc(47 / 36);
   color: var(--main-light);
 }
 
@@ -550,11 +562,6 @@ body {
 /* Gallery section--------------------------*/
 .gallery__title {
   padding: 63px 0px 43px;
-
-  font-size: 36px;
-  line-height: calc(47 / 36);
-
-  text-align: center;
 }
 
 /* ---------------------------------------- */
@@ -692,11 +699,6 @@ body {
 
 .team__title {
   padding-bottom: 40px;
-
-  font-size: 36px;
-  line-height: calc(47 / 36);
-
-  text-align: center;
 }
 
 .team__list {
@@ -744,11 +746,6 @@ body {
   padding-bottom: 43px;
   margin-left: 400px;
   max-width: 500px;
-
-  font-size: 36px;
-  line-height: calc(47 / 36);
-
-  text-align: center;
 }
 
 .terms-list {
@@ -791,11 +788,7 @@ body {
 .offer__title {
   padding-bottom: 45px;
 
-  font-size: 36px;
-  line-height: calc(47 / 36);
   color: #373737;
-
-  text-align: center;
 }
 /* ---------------------------------------- */
 .offer__list {
@@ -825,7 +818,7 @@ body {
 }
 
 .offer__subtitle {
-  font-size: 36px;
+  font-size: var(--title-fz);
   line-height: calc(50 / 36);
   color: var(--accent);
 }
@@ -867,8 +860,6 @@ body {
 .gift-top__title {
   padding-bottom: 12px;
 
-  font-size: 36px;
-  line-height: calc(47 / 36);
   color: #151515;
 }
 
@@ -976,8 +967,6 @@ body {
 
   font-size: 36px;
   line-height: calc(51 / 36);
-
-  text-align: center;
 }
 
 /* ---------------------------------------- */
@@ -1095,4 +1084,44 @@ body {
 
   font-weight: var(--secondary-fw);
   line-height: 17px;
+}
+
+/* Services section------------------------ */
+
+.services-container {
+  padding-bottom: 110px;
+}
+
+/* ---------------------------------------- */
+.services__title {
+  padding-bottom: 55px;
+
+  font-size: var(--title-fz);
+  line-height: calc(51 / 36);
+}
+
+/* ---------------------------------------- */
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.services__item {
+  background: var(--secondary-light);
+  border-radius: 9px;
+}
+
+/* ---------------------------------------- */
+.services__img {
+  border-radius: 10px;
+}
+
+.services__text {
+  padding: 10px 0 26px 24px;
+  max-width: 227px;
+
+  font-size: 18px;
+  line-height: calc(23 / 18);
+  color: var(--accent);
 }
