@@ -264,7 +264,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Hero--------------------------------------- */
+/* Main------------------------------------ */
+/* Hero section---------------------------- */
 .hero {
   position: relative;
   width: 100%;
@@ -308,10 +309,12 @@ body {
   object-fit: cover;
 }
 
-/* Benefits----------------------------------- */
+/* Benefits section------------------------ */
 .benefits {
   background-color: var(--main-light);
 }
+
+/* ---------------------------------------- */
 .benefits__list {
   display: flex;
   justify-content: space-between;
@@ -335,6 +338,7 @@ body {
   max-height: 100%;
 }
 
+/* ---------------------------------------- */
 .benefits__ellipse {
   position: absolute;
   top: 2px;
@@ -347,6 +351,7 @@ body {
   border-radius: 50%;
 }
 
+/* ---------------------------------------- */
 .benefits__title {
   padding: 10px 0px;
 
@@ -361,7 +366,7 @@ body {
   line-height: calc(21 / 14);
 }
 
-/* Route----------------------------------- */
+/* Route section--------------------------- */
 .route {
   background-color: #f4f4f4;
 }
@@ -499,6 +504,7 @@ body {
   cursor: pointer;
 }
 
+/* ---------------------------------------- */
 /* Активная точка */
 .route-slider .slick-dots .slick-active button {
   background-color: var(--accent-secondary);
@@ -520,6 +526,7 @@ body {
   cursor: pointer;
 }
 
+/* ---------------------------------------- */
 /* Стрелка влево */
 .route-slider .slick-arrow.slick-prev {
   left: 0px;
@@ -534,7 +541,7 @@ body {
   background: url(../img/routes-img/icons/arrow-right-long-solid.svg) 0 0/100% no-repeat;
 }
 
-/* Test--------------------------------------- */
+/* Test section---------------------------- */
 .test {
   background: url(../img/test-img/background/vector.png);
   background-color: var(--main-dark);
@@ -1137,4 +1144,94 @@ body {
   font-size: 18px;
   line-height: calc(23 / 18);
   color: var(--accent);
+}
+
+/* Footer section-------------------------- */
+.footer {
+}
+
+.footer-container {
+}
+
+/* ---------------------------------------- */
+.footer-contacts {
+  display: flex;
+}
+
+/* ---------------------------------------- */
+.footer-left {
+  max-width: 660px;
+}
+
+.footer-left__title {
+  padding-bottom: 64px;
+
+  line-height: calc(51 / 36);
+}
+
+/* ---------------------------------------- */
+.footer-left__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-left__item {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 0 25%;
+
+  min-width: 329px;
+  height: 94px;
+  padding-bottom: 37px;
+}
+
+.footer-left__item:last-child {
+  align-items: start;
+}
+
+/* ---------------------------------------- */
+
+.fa-solid,
+.fa-regular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  background: #037e8c;
+}
+.fa-house,
+.fa-phone,
+.fa-envelope,
+.fa-clock {
+  padding-top: 5px;
+  color: var(--main-light);
+  text-align: center;
+  font-size: 30px;
+}
+
+.fa-phone,
+.fa-clock {
+  padding-top: 7px;
+}
+
+.fa-envelope {
+  padding-top: 8px;
+  padding-left: 1px;
+}
+
+.fa-clock {
+  padding-left: 2px;
+}
+
+/* ---------------------------------------- */
+.footer-left__desc {
+  padding-left: 16px;
+
+  font-weight: var(--secondary-fw);
+  font-size: var(--secondary-fz);
+  line-height: calc(27 / 18);
 }
