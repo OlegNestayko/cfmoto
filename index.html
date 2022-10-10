@@ -32,7 +32,7 @@
 						<a href="#qa" class="nav__link link">Вопрос-Ответ</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link link">Контакты</a>
+						<a href="#contacs" class="nav__link link">Контакты</a>
 					</li>
 					<li class="nav__item">
 						<a href="#" class="nav__link link">Забронировать</a>
@@ -40,8 +40,7 @@
 				</ul>
 			</nav>
 			<div class="header__box">
-				<a href="tel:+79283332645" class="header__link link"><img src="./img/header/phone.png" alt="phone"
-						width="16" class="header__pic"> +7 928 333 26 45</a>
+				<a href="tel:+79283332645" class="header__link link"><i class="fa-solid fa-phone"></i> +7 928 333 26 45</a>
 				<button type="button" class="header__btn btn">Перезвоните мне</button>
 			</div>
 		</div>
@@ -524,7 +523,7 @@
 	<!--Footer-->
 	<footer class="footer">
 		<div class="footer-container section">
-			<div class="footer-contacts">
+			<div id="contacs" class="footer-contacts">
 				<!-- contacts -->
 				<div class="footer-left">
 					<h2 class="footer-left__title title">Контакты</h2>
@@ -535,11 +534,13 @@
 						</li>
 						<li class="footer-left__item">
 							<i class="fa-solid fa-phone"></i>
-							<p class="footer-left__desc">+7 928 428-00-62</p>
+							<p class="footer-left__desc"><a href="tel:+79284280062" class="footer-left__link link">+7 928
+									428-00-62</a></p>
 						</li>
 						<li class="footer-left__item">
 							<i class="fa-solid fa-envelope"></i>
-							<p class="footer-left__desc ">experience@groupgrand.ru</p>
+							<p class="footer-left__desc "><a href="mailto:experience@groupgrand.ru"
+									class="footer-left__link link">experience@groupgrand.ru</a> </p>
 						</li>
 						<li class="footer-left__item">
 							<i class="fa-regular fa-clock"></i>
@@ -552,9 +553,30 @@
 					</ul>
 
 					<!-- socials -->
+					<div class="footer-socials socials">
+						<h2 class="socials__title">Написать нам:</h2>
+						<ul class="socials__list list">
+							<li class="socials__item">
+								<a href="https://www.whatsapp.com/?lang=ru" class="socials__link"
+									rel="noopener noreferrer nofollow" target="_blank">
+									<i class="fa-brands fa-square-whatsapp"></i>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="https://www.instagram.com/" class="socials__link" rel="noopener noreferrer nofollow"
+									target="_blank">
+									<i class="fa-brands fa-square-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
 
 				</div>
-				<div class="footer-right"><a href="" class="footer-right__link"></a></div>
+				<div class="footer-right"><a href="https://goo.gl/maps/336j4nSipmefoV5b9" target="_blank"
+						rel="noopener noreferrer nofollow" class="footer-right__link">
+						<img src="./img/footer/map.jpg" alt="map" class="footer-right__img" width="707">
+					</a></div>
 			</div>
 		</div>
 	</footer>

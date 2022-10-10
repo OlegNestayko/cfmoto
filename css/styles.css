@@ -262,8 +262,28 @@ body {
   color: var(--main-light);
 
   letter-spacing: 0.02em;
+
+  transition: all 0.5s ease 0s;
 }
 
+.header__link:hover {
+  color: var(--accent-secondary);
+}
+
+.header__link .fa-solid:hover {
+  color: currentColor;
+  cursor: pointer;
+}
+
+.header__link .fa-solid {
+  padding: 0;
+
+  font-size: 20px;
+
+  background-color: transparent;
+
+  transition: all 0.5s ease 0s;
+}
 /* Main------------------------------------ */
 /* Hero section---------------------------- */
 .hero {
@@ -1094,8 +1114,7 @@ body {
 }
 
 /* QA background img----------------------- */
-.qa-bg {
-}
+
 .qa-bg__left {
   position: absolute;
   top: 37%;
@@ -1147,20 +1166,25 @@ body {
 }
 
 /* Footer section-------------------------- */
-.footer {
-}
-
-.footer-container {
-}
 
 /* ---------------------------------------- */
 .footer-contacts {
-  display: flex;
+  position: relative;
+
+  padding-bottom: 74px;
 }
 
-/* ---------------------------------------- */
+/* footer left----------------------------- */
 .footer-left {
   max-width: 660px;
+}
+
+.footer-left::before {
+  content: '';
+  display: block;
+  width: 595px;
+  height: 1px;
+  background-color: var(--accent);
 }
 
 .footer-left__title {
@@ -1173,6 +1197,8 @@ body {
 .footer-left__list {
   display: flex;
   flex-wrap: wrap;
+
+  padding-bottom: 16px;
 }
 
 .footer-left__item {
@@ -1180,9 +1206,10 @@ body {
   align-items: flex-start;
   flex: 1 0 25%;
 
+  padding-bottom: 37px;
+
   min-width: 329px;
   height: 94px;
-  padding-bottom: 37px;
 }
 
 .footer-left__item:last-child {
@@ -1199,9 +1226,10 @@ body {
 
   width: 45px;
   height: 45px;
-  border-radius: 50%;
 
   background: #037e8c;
+
+  border-radius: 50%;
 }
 .fa-house,
 .fa-phone,
@@ -1235,3 +1263,50 @@ body {
   font-size: var(--secondary-fz);
   line-height: calc(27 / 18);
 }
+
+.footer-left__link {
+  transition: all 0.5s ease 0s;
+}
+
+.footer-left__link:hover,
+.footer-left__link:focus {
+  color: var(--accent-secondary);
+}
+
+/* footer socials-------------------------- */
+
+/* ---------------------------------------- */
+.socials__title {
+  padding-bottom: 16px;
+}
+
+/* ---------------------------------------- */
+.socials__list {
+  display: flex;
+}
+
+/* ---------------------------------------- */
+.fa-brands {
+  font-size: 30px;
+  color: var(--main-dark);
+  transition: all 0.5s ease 0s;
+}
+
+.fa-brands:hover,
+.fa-brands:focus {
+  color: var(--accent-secondary);
+}
+
+.fa-square-instagram {
+  padding-left: 20px;
+}
+
+/* footer right---------------------------- */
+.footer-right {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  padding-bottom: 74px;
+}
+
+/* footer menu----------------------------- */
