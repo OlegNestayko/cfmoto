@@ -36,6 +36,10 @@ body {
   color: var(--main-dark);
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 /* Common styles------------------------------ */
 .section {
   max-width: 1300px;
@@ -131,7 +135,7 @@ body {
 /* Header btn */
 .header__btn {
   padding: 12px 20px;
-  margin-left: 18px;
+  margin-left: 36px;
 
   line-height: calc(15 / 14);
   color: var(--main-light);
@@ -211,6 +215,21 @@ body {
   z-index: 50;
 }
 
+.header__logo {
+  transition: all 3s ease 0s;
+  transform: translateX(-150%);
+  animation: ani 5s forwards;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .header-box {
   position: absolute;
   top: 0;
@@ -228,6 +247,23 @@ body {
 
 .nav {
   padding-top: 39px;
+}
+
+.nav,
+.header__box {
+  opacity: 0;
+  animation: nav 2s forwards 3s;
+  transition: all 2s ease 0s;
+}
+
+@keyframes nav {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .nav__list {
@@ -284,6 +320,98 @@ body {
 
   transition: all 0.5s ease 0s;
 }
+
+/* Header popup---------------------------- */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 51;
+  background-color: rgba(18, 18, 20, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popup-header__content {
+  opacity: 1;
+  transform: perspective(600px) translate(0px, 0px) rotateX(0);
+}
+
+.popup-header {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-header__content {
+  padding: 80px 360px;
+  background-color: var(--main-light);
+  transition: all 0.8s ease 0s;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  opacity: 0;
+}
+
+.popup-header__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  opacity: 0.5;
+  transition: all 0.5s ease 0s;
+}
+
+.popup-header__close:hover {
+  opacity: 1;
+}
+
+.popup-header__title {
+  padding-bottom: 30px;
+
+  font-weight: var(--main-fw);
+  font-size: 24px;
+  line-height: calc(29 / 24);
+}
+
+.popup-header__desc {
+  padding-bottom: 8px;
+
+  font-weight: var(--main-fw);
+  font-size: 14px;
+  line-height: calc(17 / 14);
+}
+
+.input-popup {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 11px;
+  margin-bottom: 8px;
+  width: 350px;
+  border: 0.5px solid #787878;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease 0s;
+}
+
+.input-popup:focus {
+  border-color: var(--accent-secondary);
+}
+
+.popup-header__btn {
+  display: block;
+  padding: 10px 42px;
+}
+
 /* Main------------------------------------ */
 /* Hero section---------------------------- */
 .hero {
