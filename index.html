@@ -36,7 +36,7 @@
 							<a href="#contacs" class="nav__link link">Контакты</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link link">Забронировать</a>
+							<a href="#popup-booking" class="nav__link link popup-link">Забронировать</a>
 						</li>
 					</ul>
 				</nav>
@@ -128,8 +128,8 @@
 						<p class="route-content__text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис -
 							-Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
 							-Форсаж</p>
-						<button type="button" class="route-content__btn btn btn-light">Подробнее</button>
-						<button type="button" class="route-content__btn btn btn-accent">Забронировать</button>
+						<a href="#popup-routes" class="route-content__btn btn btn-light link popup-link">Подробнее</a>
+						<a href="#popup-booking" class="route-content__btn btn btn-accent link popup-link">Забронировать</a>
 					</div>
 					<div class="route-slider ">
 						<div class="route-slider__slide">
@@ -171,7 +171,7 @@
 						<p class="route-content__text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис -
 							-Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
 							-Форсаж</p>
-						<button type="button" class="route-content__btn btn btn-light">Подробнее</button>
+						<a href="#popup-routes" class="route-content__btn btn btn-light link popup-link">Подробнее</a>
 						<button type="button" class="route-content__btn btn btn-accent">Забронировать</button>
 					</div>
 					<div class="route-slider ">
@@ -214,7 +214,7 @@
 							width="24" class="route-content__pic">
 						<p class="route-content__text">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –
 							- Форсаж</p>
-						<button type="button" class="route-content__btn btn btn-light">Подробнее</button>
+						<a href="#popup-routes" class="route-content__btn btn btn-light link popup-link">Подробнее</a>
 						<button type="button" class="route-content__btn btn btn-accent">Забронировать</button>
 					</div>
 					<div class="route-slider ">
@@ -522,10 +522,6 @@
 								<p class="services__text">Услуги гида</p>
 							</a>
 						</li>
-
-
-
-
 					</ul>
 				</div>
 			</section>
@@ -628,9 +624,9 @@
 
 		<!-- Header popup -->
 		<div id="popup-header" class="popup">
-			<div class="popup-header">
-				<div class="popup-header__content">
-					<a href="#" class="popup-header__close link close-popup">X</a>
+			<section class="popup-header">
+				<div class="popup-header__content popup-content">
+					<a href="#" class="popup__close link close-popup">X</a>
 					<h2 class="popup-header__title">Оставить заявку</h2>
 					<p class="popup-header__desc">Как к Вам обращаться?</p>
 					<input type="text" name="user name" class="popup-header__name input-popup">
@@ -638,8 +634,174 @@
 					<input type="tel" name="user tel" class="popup-header__tel input-popup">
 					<input type="submit" class="popup-header__btn btn-accent btn">
 				</div>
-			</div>
+			</section>
 		</div>
+
+		<!-- Routes popup -->
+		<div id="popup-routes" class="popup">
+			<section class="popup-routes">
+				<div class="popup-routes__content popup-content">
+					<a href="#" class="popup__close link close-popup">X</a>
+
+					<!-- routes slider -->
+					<div class="popup-routes__top">
+
+						<div class="popup-routes__slider">
+							<h3 class="popup-routes__title title">Экскурсия “РИО”</h3>
+
+							<ul class="popup-routes__list list">
+								<li class="popup-routes__item item-route">
+									<img src="./img/routes-img/icons/time.png" alt="clock" class="item-route__pic">
+									<p class="item-route__text">Время в пути: <span class="accent-text">1,5 - 2 часа</span> </p>
+								</li>
+								<li class="popup-routes__item item-route">
+									<img src="./img/routes-img/icons/distance.png" alt="distance" class="item-route__pic">
+									<p class="item-route__text">Расстояние: <span class="accent-text">20 - 25 км</span></p>
+								</li>
+								<li class="popup-routes__item item-route">
+									<img src="./img/routes-img/icons/star.png" alt="star" class="item-route__pic">
+									<p class="item-route__text">Сложность: <span
+											class="accent-text">5&#10038;&#10038;&#10038;</span>
+									</p>
+								</li>
+							</ul>
+
+							<h5 class="popup-routes__caption">маршрут</h5>
+							<img src="./img/routes-img/icons/icon.png" alt="icon" width="24" class="popup-routes__pic">
+							<p class="popup-routes__text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис -
+								-Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+								-Форсаж</p>
+							<a href="#popup-routes" class="popup-routes__btn btn btn-light link popup-link">Схема маршрута</a>
+
+
+						</div>
+
+						<div class="route-slider right-popup">
+							<div class="route-slider__slide">
+								<img src="./img/routes-img/base/buggy1.jpg" alt="buggy" class="route-slider__img" width="360">
+							</div>
+							<div class="route-slider__slide">
+								<img src="./img/routes-img/base/buggy2.jpg" alt="buggy" class="route-slider__img" width="360">
+							</div>
+							<div class="route-slider__slide">
+								<img src="./img/routes-img/base/buggy3.jpg" alt="buggy" class="route-slider__img" width="360">
+							</div>
+
+
+						</div>
+
+					</div>
+
+					<!-- routes gallery -->
+					<div class="popup-routes__gallery gallery-popup">
+						<h2 class="gallery-popup__title">
+							Стоимость экскурсии за 1 квадроцикл:
+						</h2>
+						<ul class="gallery-popup__list list">
+							<li class="gallery-popup__item">
+								<img src="./img/popup/u10.jpg" alt="baggy" class="gallery-popup__img" width="303">
+								<p class="gallery-popup__text">UFORCE 1000 EPS (U10 EPS)</p>
+								<p class="gallery-popup__price">4000 &#36</p>
+							</li>
+							<li class="gallery-popup__item">
+								<img src="./img/popup/x10.jpg" alt="baggy" class="gallery-popup__img" width="303">
+								<p class="gallery-popup__text">CFORCE 1000 EPS (X10 EPS)</p>
+								<p class="gallery-popup__price">6000 &#36</p>
+							</li>
+							<li class="gallery-popup__item">
+								<img src="./img/popup/eps600.jpg" alt="baggy" class="gallery-popup__img" width="303">
+								<p class="gallery-popup__text">CFMOTO CFORCE 600 EPS</p>
+								<p class="gallery-popup__price">7000 &#36</p>
+							</li>
+							<li class="gallery-popup__item">
+								<img src="./img/popup/x4.jpg" alt="baggy" class="gallery-popup__img" width="303">
+								<p class="gallery-popup__text">CFORCE 400L EPS (X4 EPS)</p>
+								<p class="gallery-popup__price">8000 &#36</p>
+							</li>
+							<li class="gallery-popup__item">
+								<img src="./img/popup/z1000.jpg" alt="baggy" class="gallery-popup__img" width="303">
+								<p class="gallery-popup__text">ZFORCE 1000</p>
+								<p class="gallery-popup__price">9000 &#36</p>
+							</li>
+							<li class="gallery-popup__item">
+								<img src="./img/popup/u10.jpg" alt="baggy" class="gallery-popup__img" width="303">
+								<p class="gallery-popup__text">UFORCE 1000 EPS (U10 EPS)</p>
+								<p class="gallery-popup__price">4000 &#36</p>
+							</li>
+						</ul>
+					</div>
+
+					<!-- routes description -->
+					<div class="popup-routes__desc desc-popup">
+						<h2 class="desc-popup__title">Что посмотрим на маршруте:</h2>
+						<p class="desc-popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue lacus lacus
+							facilisis orci nibh diam. Nisi, a et sit
+							commodo. Pretium sed consectetur risus elementum, habitasse turpis massa.</p>
+						<p class="desc-popup__text">In sit mi aenean volutpat. Quis lectus nunc nam euismod ultrices aenean.
+							Vitae venenatis ut praesent neque sed quam
+							mauris elementum. Risus blandit leo ut nullam egestas et porta. Ut lacus arcu sagittis sit. Gravida
+							et faucibus id
+							tortor augue interdum quam sit diam. Laoreet nulla at et arcu pellentesque massa placerat elit.
+							Adipiscing in nullam
+							ipsum est. In sit mi aenean volutpat. Quis lectus nunc nam euismod ultrices aenean. Vitae venenatis
+							ut praesent neque
+							sed quam mauris elementum. Risus blandit leo ut nullam egestas et porta. Ut lacus arcu sagittis
+							sit.</p>
+					</div>
+
+				</div>
+
+			</section>
+		</div>
+
+		<!-- Booking popup -->
+		<div id="popup-booking" class="popup">
+			<section class="popup-booking">
+				<div class="popup-booking__content popup-content">
+					<a href="#" class="popup__close link close-popup">X</a>
+					<h2 class="popup-booking__title">
+						Бронирование онлайн
+					</h2>
+					<form action="#" class="popup-booking__form">
+						<div class="popup-booking__box">
+							<label for="user date" class="popup-booking__subtitle">
+								Желаемая дата</label>
+							<input class="popup-booking__input" type="text" name="bookings date">
+							<i class="fa-regular fa-calendar-days"></i>
+						</div>
+
+						<div class="popup-booking__box">
+							<label for="number of persons" class="popup-booking__subtitle">
+								Количество человек</label>
+							<input type="number" class="popup-booking__input">
+							<i class="fa-solid fa-users"></i>
+						</div>
+
+						<div class="popup-booking__box">
+							<label for="user tel" class="popup-booking__subtitle">
+								Телефон или WhatsApp</label>
+							<input type="tel" class="popup-booking__input">
+							<i class="fa-solid fa-square-phone"></i>
+						</div>
+
+						<div class="popup-booking__box">
+							<label for="user name" class="popup-booking__subtitle">
+								Как к Вам обращаться?</label>
+							<input type="text" class="popup-booking__input">
+							<i class="fa-solid fa-user"></i>
+						</div>
+
+						<button type="button" class="popup-booking__btn btn btn-accent">Забронировать</button>
+
+
+					</form>
+
+
+
+				</div>
+			</section>
+		</div>
+
 	</div>
 
 	<!--Font awesome  -->

@@ -41,7 +41,7 @@ const lockPadding = document.querySelectorAll('.lock-padding');
 
 let unlock = true;
 
-const timeout = 800;
+const timeout = 1000;
 
 if (popupLinks.length > 0) {
   for (let index = 0; index < popupLinks.length; index += 1) {
@@ -76,7 +76,7 @@ function popupOpen(currentPopup) {
     }
     currentPopup.classList.add('open');
     currentPopup.addEventListener('click', function (e) {
-      if (!e.target.closest('.popup-header__content')) {
+      if (!e.target.closest('.popup-content')) {
         popupClose(e.target.closest('.popup'));
       }
     });
