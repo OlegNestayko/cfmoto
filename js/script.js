@@ -127,3 +127,19 @@ function bodyUnLock() {
     unlock = true;
   }, timeout);
 }
+
+/* ---------------------------------------- */
+// Scroll to up
+const scrollBtn = document.querySelector('.scroll__link');
+
+window.onscroll = () => {
+  if (window.scrollY > 700) {
+    scrollBtn.classList.remove('scroll__link_hide');
+  } else if (window.scrollY < 700) {
+    scrollBtn.classList.add('scroll__link_hide');
+  }
+
+  scrollBtn.onclick = () => {
+    window.scrollTo(0, 0);
+  };
+};

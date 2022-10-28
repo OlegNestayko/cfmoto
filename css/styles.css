@@ -48,8 +48,8 @@ body.lock {
 
 /* ---------------------------------------- */
 .link {
-  text-decoration: none;
   color: currentColor;
+  text-decoration: none;
 }
 
 /* ---------------------------------------- */
@@ -88,14 +88,17 @@ body.lock {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
 
+  padding: 0;
+  margin: -1px;
+
+  border: 0;
   white-space: nowrap;
+
+  overflow: hidden;
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* ALL Buttons styles-----------------------*/
@@ -125,13 +128,14 @@ body.lock {
 
 .btn-accent {
   padding: 14px 29px;
-  line-height: calc(18 / 14);
 
+  line-height: calc(18 / 14);
   color: var(--main-light);
 
   background-color: var(--accent);
   border: 1px solid transparent;
 }
+
 /* Header btn */
 .header__btn {
   padding: 12px 20px;
@@ -331,11 +335,14 @@ body.lock {
   width: 100%;
   height: 100%;
   z-index: 51;
+
   background-color: rgba(18, 18, 20, 0.8);
   opacity: 0;
   visibility: hidden;
+
   overflow-y: auto;
   overflow-x: hidden;
+
   transition: all 1s ease 0s;
 }
 
@@ -361,7 +368,9 @@ body.lock {
   position: absolute;
   top: 10px;
   right: 10px;
+
   font-size: 20px;
+
   opacity: 0.5;
   transition: all 0.5s ease 0s;
 }
@@ -374,6 +383,7 @@ body.lock {
 .popup-header {
   position: relative;
   min-height: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -409,8 +419,10 @@ body.lock {
   padding-left: 11px;
   margin-bottom: 8px;
   width: 350px;
+
   border: 0.5px solid #787878;
   border-radius: 8px;
+
   outline: none;
   transition: all 0.3s ease 0s;
 }
@@ -428,6 +440,7 @@ body.lock {
 .popup-routes {
   padding: 117px 70px 64px;
 }
+
 /* routes popup slider--------------------------- */
 .popup-routes__content {
   background-color: var(--main-light);
@@ -523,6 +536,7 @@ body.lock {
 .popup-booking {
   padding: 100px;
 }
+
 .popup-booking__content {
   padding: 70px 198px;
 
@@ -531,6 +545,7 @@ body.lock {
     url(../img/popup/booking/spring.png) 0px 163px no-repeat,
     url(../img/popup/booking/canister.png) 300px 272px no-repeat,
     url(../img/popup/booking/bumper.png) 400px 0px no-repeat;
+
   background-color: var(--secondary-light);
 }
 
@@ -540,6 +555,7 @@ body.lock {
   font-size: 24px;
   line-height: calc(29 / 24);
 }
+
 .popup-booking__subtitle {
   display: flex;
   flex-direction: column;
@@ -562,14 +578,9 @@ body.lock {
 .popup-booking__input {
   position: relative;
   padding-left: 22px;
-  outline: none;
   min-width: 200px;
-}
 
-.benefits__item {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-left: 0;
+  outline: none;
 }
 
 .popup-booking__input:focus {
@@ -659,11 +670,11 @@ body.lock {
 
 /* ---------------------------------------- */
 .benefits__list {
+  padding: 47px 70px 27px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 47px 70px 27px;
 }
 
 .benefits__item {
@@ -757,6 +768,7 @@ body.lock {
   font-size: 24px;
   line-height: calc(26 / 24);
 }
+
 /* ---------------------------------------- */
 .route-content__list,
 .popup-routes__list {
@@ -768,27 +780,27 @@ body.lock {
 }
 
 .item-route__text {
-  display: inline-block;
-
   padding-left: 17px;
+
+  display: inline-block;
 
   font-weight: var(--secondary-fw);
   font-size: 16px;
   line-height: calc(17 / 16);
-
   text-transform: uppercase;
 }
+
 /* ---------------------------------------- */
 .route-content__caption,
 .popup-routes__caption {
-  display: inline-block;
   padding-bottom: 14px;
   padding-right: 10px;
+
+  display: inline-block;
 
   font-weight: var(--main-fw);
   font-size: var(--secondary-fz);
   line-height: calc(23 / 18);
-
   text-transform: uppercase;
 }
 
@@ -846,7 +858,6 @@ body.lock {
   font-size: 0;
 
   background-color: var(--main-light);
-
   border-radius: 50%;
   border: 1px solid var(--accent-secondary);
 
@@ -1097,6 +1108,7 @@ body.lock {
 .terms-wrapper {
   padding: 50px 0 82px;
 }
+
 /* ---------------------------------------- */
 .terms__title {
   padding-bottom: 43px;
@@ -1140,12 +1152,14 @@ body.lock {
 .offer-wrapper {
   padding: 64px 0 75px;
 }
+
 /* ---------------------------------------- */
 .offer__title {
   padding-bottom: 45px;
 
   color: #373737;
 }
+
 /* ---------------------------------------- */
 .offer__list {
   display: flex;
@@ -1163,10 +1177,12 @@ body.lock {
 .offer__item:last-child {
   margin-left: 15px;
 }
+
 /* ---------------------------------------- */
 .offer__img {
   border-radius: 20px/10px;
 }
+
 /* ---------------------------------------- */
 .offer-box {
   padding-top: 26px;
@@ -1424,6 +1440,7 @@ body.lock {
 
   text-align: center;
 }
+
 /* ---------------------------------------- */
 .content-qa__title {
   padding: 14px 0;
@@ -1449,11 +1466,13 @@ body.lock {
   top: 37%;
   left: 0%;
 }
+
 .qa-bg__right {
   position: absolute;
   right: 0;
   bottom: 15%;
 }
+
 /* Services section------------------------ */
 
 .services-container {
@@ -1698,4 +1717,27 @@ body.lock {
   color: #787878;
 
   text-align: center;
+}
+
+/* Scroll to up */
+.scroll {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  z-index: 77;
+}
+
+.fa-circle-arrow-up {
+  font-size: 40px;
+  color: var(--accent);
+}
+
+.scroll__link {
+  opacity: 0.7;
+
+  transition: all 1s ease 0s;
+}
+
+.scroll__link_hide {
+  opacity: 0;
 }
